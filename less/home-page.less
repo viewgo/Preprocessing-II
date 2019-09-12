@@ -152,7 +152,8 @@ header{
     justify-content: space-between;
 
     @media @tablet{
-      //TABLET LAYOUT
+      .flex(column, space-between, center);         
+      width: 100%; 
     }
     @media @mobile{
       .flex(column, space-between, center);         
@@ -161,19 +162,28 @@ header{
 
     .destination {
       width: 30%;
-      margin-bottom: 30px;
+      margin-bottom: 30px;      
 
       @media @tablet{
-        //TABLET LAYOUT
+        width: 65%;
+        h4{
+          text-align: center;
+        }
       }
       @media @mobile{              
-        width: 80%;        
+        width: 80%;
+        h4{
+          text-align: start;
+        }     
       }
+
+      
 
       .btn{ 
         
         @media @tablet{
-          //TABLET LAYOUT
+          width: 100%;
+          .flex(row, center, center);
         }
         @media @mobile{              
           width: 100%;        
