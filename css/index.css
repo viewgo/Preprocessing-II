@@ -1,3 +1,7 @@
+.flex-item {
+  -webkit-flex: 1 auto;
+  flex: 1 auto;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -159,6 +163,9 @@ p {
   font-size: 1.6rem;
   padding-bottom: 10px;
 }
+a {
+  font-size: 1.6rem;
+}
 img {
   max-width: 100%;
   height: auto;
@@ -167,6 +174,20 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+nav {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  color: #212529;
+}
+nav a:hover {
+  color: #C0C0C0;
 }
 .footer {
   width: 100%;
@@ -178,6 +199,31 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.topBorder {
+  border-top: 2px dashed #C0C0C0;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+.subheader {
+  padding-top: 1px;
+}
+.subheader .bottom {
+  padding-bottom: 15px;
+  border-bottom: 2px dashed #C0C0C0;
+}
+.subheader .bottom img {
+  padding-bottom: 10px;
 }
 .home .content-section {
   margin: 30px 0;
