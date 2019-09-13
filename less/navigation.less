@@ -1,1 +1,26 @@
 // Navigation Styles here
+
+nav{
+    width: 30%;
+    .flex(row, space-between, center);
+
+    a{
+        text-decoration: none;
+        color: @font-color;
+    }
+    a:hover{
+        color: @silver;
+    }
+
+
+    @media @tablet{
+        width: 60%;        
+    }
+    @media @mobile{    
+        width: 100%;
+        padding-top: 15px;
+        .flex(row, space-around, center);
+
+    }
+    
+  }
